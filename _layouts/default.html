@@ -1,0 +1,47 @@
+---
+title: "Landscape design"
+categories:
+
+  - name: landscape_design
+    title : Landscape design
+
+  - name: public_architecture
+    title : Public architecture
+
+  - name: interiors
+    title : Interiors
+
+  - name: masterplans
+    title : Masterplans
+
+  - name: country_houses
+    title : Country Houses
+
+---
+<!DOCTYPE html>
+<html>
+    {% include head.html %}
+    <body id="page-top" class="index">
+    {% include nav.html %}
+    {% include header.html %}
+
+    {% for category in page.categories %}
+      {% include portfolio_grid.html %}
+    {% endfor %}
+
+
+    {% include about.html %}
+
+    {% if site.contact == "static" %}
+    {% include contact_static.html %}
+    {% elsif site.contact == "disqus" %}
+    {% include contact_disqus.html %}
+    {% else %}
+    {% include contact.html %}
+    {% endif %}
+
+    {% include footer.html %}
+    {% include modals.html %}
+    {% include js.html %}
+    </body>
+</html>
