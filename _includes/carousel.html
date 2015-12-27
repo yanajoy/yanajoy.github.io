@@ -1,0 +1,19 @@
+
+
+<div class="slider fade slick-initialized slick-slider" role="toolbar">
+  <button type="button" data-role="none" class="slick-prev slick-arrow" aria-label="Previous" role="button" style="display: block;">Previous</button>
+  <div aria-live="polite" class="slick-list draggable">
+    <div class="slick-track" style="opacity: 1; width: 1680px;" role="listbox">
+      {% for img in post.carousel %}
+      <div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide90" style="width: 560px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;">
+        <div class="image">
+          <img src="img/portfolio/{{ img }}">
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+
+  <button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button" style="display: block;">Next</button>
+</div>
