@@ -1,53 +1,8 @@
-
-
-  <div class="connected-carousels">
-    <div class="stage">
-      <div class="carousel carousel-stage">
-        <ul>
-          {% capture slug %}{{ page.title | slugify }}{% endcapture %}
-          {% for f in site.static_files %}
-          {% if f.path contains slug %}
-            <img src="{{ f.path }}" width="600" height="400" alt="">
-          {% endif %}
-          {% endfor %}
-          <!-- {% for img in page.carousel %}
-          <li>
-            <img src="img/portfolio/{{ img }}" width="600" height="400" alt="">
-          </li>
-          {% endfor %} -->
-        </ul>
-      </div>
-      <p class="photo-credits">
-        Photos by <a href="http://www.mw-fotografie.de">Marc Wiegelmann</a>
-      </p>
-      <a href="#" class="prev prev-stage">
-        <span>&lsaquo;</span>
-      </a>
-      <a href="#" class="next next-stage">
-        <span>&rsaquo;</span>
-      </a>
-    </div>
-
-    <div class="navigation">
-      <a href="#" class="prev prev-navigation">&lsaquo;</a>
-      <a href="#" class="next next-navigation">&rsaquo;</a>
-      <div class="carousel carousel-navigation">
-        <ul>
-          {% capture slug %}{{ page.title | slugify }}{% endcapture %}
-          {% for f in site.static_files %}
-          {% if f.path contains slug %}
-          <li>
-            <img src="{{ f.path }}" width="50" height="50" alt="">
-          </li>
-          {% endif %}
-          {% endfor %}
-
-          <!-- {% for img in page.carousel %}
-          <li>
-            <img src="img/portfolio/{{ img }}" width="50" height="50" alt="">
-          </li>
-          {% endfor %} -->
-        </ul>
-      </div>
-    </div>
-  </div>
+<div id="owl-demo" class="owl-carousel">
+  {% capture slug %}{{ page.title | slugify }}{% endcapture %}
+  {% for f in site.static_files %}
+  {% if f.path contains slug %}
+  <div class="item"><img class="lazyOwl" data-src="{{ f.path }}" alt="{{ page.title }}"></div>
+  {% endif %}
+  {% endfor %}
+</div>
