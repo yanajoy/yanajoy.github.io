@@ -18,11 +18,10 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-
                       {% for collection in site.collections %}
-                      {% if  collection.docs.size > 0 %}
+                      {% if  collection[1].size > 0 %}
                       <li class="page-scroll">
-                          <a href="#{{ collection.label }}">{{ collection.title }}</a>
+                          <a href="#{{ collection[0] }}">{{ collection[1].title }}</a>
                       </li>
                       {% endif %}
                     {% endfor %}

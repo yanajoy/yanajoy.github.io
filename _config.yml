@@ -63,14 +63,10 @@ permalink: none
 
 collections:
   landscape_design:
-    output: true
     title : Landscape design
   public_architecture:
-    output: true
     title : Public architecture
   interiors:
-    output: true
     title : Interiors
   country_houses:
-    output: true
     title : Country Houses
