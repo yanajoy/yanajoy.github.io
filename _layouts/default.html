@@ -1,22 +1,5 @@
 ---
 title: "Landscape design"
-categories:
-
-  - name: landscape_design
-    title : Landscape design
-
-  - name: public_architecture
-    title : Public architecture
-
-  - name: interiors
-    title : Interiors
-
-  - name: masterplans
-    title : Masterplans
-
-  - name: country_houses
-    title : Country Houses
-
 ---
 <!DOCTYPE html>
 <html>
@@ -25,8 +8,10 @@ categories:
     {% include nav.html %}
     {% include header.html %}
 
-    {% for category in page.categories %}
-      {% include portfolio_grid.html %}
+    {% for collection in site.collections %}
+      {% if  collection.docs.size > 0 %}
+        {% include portfolio_grid.html %}
+      {% endif %}
     {% endfor %}
 
 

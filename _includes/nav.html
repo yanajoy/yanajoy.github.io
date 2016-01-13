@@ -19,10 +19,13 @@
                         <a href="#page-top"></a>
                     </li>
 
-                    {% for category in page.categories %}
+                      {% for collection in site.collections %}
+                      {{ collection.docs.size }}
+                      {% if  collection.docs.size > 0 %}
                       <li class="page-scroll">
-                          <a href="#{{ category.name }}">{{ category.title }}</a>
+                          <a href="#{{ category.collection }}">{{ collection.title }}</a>
                       </li>
+                      {% endif %}
                     {% endfor %}
 
                     <li class="page-scroll">
