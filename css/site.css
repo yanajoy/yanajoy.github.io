@@ -15,3 +15,8 @@
   right: 0;
   margin: auto;
 }
+
+
+.portfolio-modal .modal-description {
+  text-align:justify;
+}
