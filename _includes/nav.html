@@ -20,10 +20,9 @@
                     </li>
 
                       {% for collection in site.collections %}
-                      {{ collection.docs.size }}
                       {% if  collection.docs.size > 0 %}
                       <li class="page-scroll">
-                          <a href="#{{ category.collection }}">{{ collection.title }}</a>
+                          <a href="#{{ collection.label }}">{{ collection.title }}</a>
                       </li>
                       {% endif %}
                     {% endfor %}
