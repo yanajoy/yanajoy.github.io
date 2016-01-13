@@ -4,11 +4,17 @@
     <div class="stage">
       <div class="carousel carousel-stage">
         <ul>
-          {% for img in page.carousel %}
+          {% capture slug %}{{ page.title | slugify }}{% endcapture %}
+          {% for f in site.static_files %}
+          {% if f.path contains slug %}
+            <img src="{{ f.path }}" width="600" height="400" alt="">
+          {% endif %}
+          {% endfor %}
+          <!-- {% for img in page.carousel %}
           <li>
             <img src="img/portfolio/{{ img }}" width="600" height="400" alt="">
           </li>
-          {% endfor %}
+          {% endfor %} -->
         </ul>
       </div>
       <p class="photo-credits">
@@ -27,11 +33,20 @@
       <a href="#" class="next next-navigation">&rsaquo;</a>
       <div class="carousel carousel-navigation">
         <ul>
-          {% for img in page.carousel %}
+          {% capture slug %}{{ page.title | slugify }}{% endcapture %}
+          {% for f in site.static_files %}
+          {% if f.path contains slug %}
+          <li>
+            <img src="{{ f.path }}" width="50" height="50" alt="">
+          </li>
+          {% endif %}
+          {% endfor %}
+
+          <!-- {% for img in page.carousel %}
           <li>
             <img src="img/portfolio/{{ img }}" width="50" height="50" alt="">
           </li>
-          {% endfor %}
+          {% endfor %} -->
         </ul>
       </div>
     </div>
