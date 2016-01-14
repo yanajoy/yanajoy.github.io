@@ -1,4 +1,4 @@
 ---
 title: linnik
-img: game.png
+img: interiors/linnik/3.jpg
 ---

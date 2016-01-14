@@ -1,4 +1,4 @@
 ---
 title: belokobylsk karakan house
-img: safe.png
+img: country_houses/belokobylsk-karakan-house/b2-2.jpg
 ---

@@ -1,4 +1,4 @@
 ---
 title: cft
-img: game.png
+img: interiors/cft/5.jpg
 ---

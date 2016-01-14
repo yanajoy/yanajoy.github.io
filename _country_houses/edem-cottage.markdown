@@ -1,4 +1,4 @@
 ---
 title: edem cottage
-img: game.png
+img: country_houses/edem-cottage/e5-5.jpg
 ---

@@ -1,4 +1,4 @@
 ---
 title: landscape with pool
-img: safe.png
+img: landscape_design/landscape-with-pool/1i3-3.jpg
 ---
