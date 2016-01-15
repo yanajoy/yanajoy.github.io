@@ -9,7 +9,7 @@ title: "Landscape design"
     {% include header.html %}
 
     {% for collection in site.collections %}
-      {% if collection[1].docs.size > 0 %}
+      {% if collection[1].size > 0 %}
         {% include portfolio_grid.html %}
       {% endif %}
     {% endfor %}
