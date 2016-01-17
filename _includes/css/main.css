@@ -4,7 +4,7 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-body {
+html, body {
     overflow-x: hidden;
 }
 
@@ -86,6 +86,7 @@ header {
 }
 
 header .container {
+    width: 100%;
     padding-top: 100px;
     padding-bottom: 50px;
 }
@@ -157,10 +158,6 @@ header .intro-text .skills {
     outline: 0;
 }
 
-.navbar .navbar-nav {
-    letter-spacing: 1px;
-}
-
 .navbar .navbar-nav li a:focus {
     outline: 0;
 }
@@ -171,7 +168,11 @@ header .intro-text .skills {
 }
 
 section {
-    padding: 100px 0;
+    padding: 50px 0;
+}
+
+section.first {
+    padding-top: 100px 0;
 }
 
 section h2 {
@@ -455,8 +456,38 @@ footer .footer-below {
     -webkit-transform: translateZ(0);
 }
 
-@media(min-width:1270px) {
+.mycontainer {
+    width: 100%;
+    margin: auto;
+    padding: 0px 5px 0px 5px;
+}
+
+
+@media(min-width:1370px) {
+  .mycontainer {
+      width: 1370px;
+  }
   .container {
       width: 1370px;
+  }
+  .navbar .navbar-nav {
+    letter-spacing: 1px;
+  }
+}
+
+
+@media(max-width:1110px) {
+  .nav> li > a {
+    position: relative;
+    display: block;
+    padding: 19.5px 5px;
+  }
+  .navbar-nav.navbar-right:last-child{
+    margin-right: 5px;
+  }
+
+  .navbar-fixed-top .navbar-brand {
+    padding: 18.5px 5px 20.5px;
+        font-size: 1em;
   }
 }
