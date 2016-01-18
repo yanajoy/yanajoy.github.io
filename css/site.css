@@ -1,26 +1,26 @@
-.owl-carousel .item{
-  height: 600px;
-  background-color: white;
-}
-.owl-carousel .item img{
-  display: block;
-  max-width:100%;
-  max-height:100%;
-  width: auto;
-  height: auto;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
-
-
 .portfolio-modal .modal-description {
   text-align:justify;
 }
 
+/*carousel*/
+
+/*.carousel {*/
+  /*max-width: 800px;*/
+
+/*}*/
+.carousel div{
+  margin: auto;
+  padding: 1px;
+}
+.carousel div img {
+  margin: auto;
+  max-width:100%;
+  max-height:100%;
+}
+
+.slick-slide{
+    outline: none;
+}
 
 /*blur and blackout titles*/
 
@@ -58,4 +58,17 @@
   font-size: 1em;
   margin: 2% 0px;
   text-transform: uppercase;
+}
+
+
+body.modal-open {
+   overflow: hidden;
+   position:fixed;
+   width: 100%;
+}
+
+.modal-content .close {
+  color: black;
+  font-size: 2em;
+  margin-top: -12px;
 }

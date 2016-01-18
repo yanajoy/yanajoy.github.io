@@ -1,8 +1,11 @@
-<div class="owl-carousel">
+<div class="carousel">
   {% capture slug %}{{ page.title | slugify }}/{% endcapture %}
   {% for f in site.static_files %}
   {% if f.path contains slug %}
-  <div class="item"><img class="lazyOwl" data-src="{{ f.path }}" alt="{{ page.title }}"></div>
+  <div>
+    <img data-lazy="{{ f.path }}" alt="{{ page.title }}">
+  </div>
   {% endif %}
   {% endfor %}
 </div>
+<br/>
