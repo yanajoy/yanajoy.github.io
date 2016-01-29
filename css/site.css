@@ -72,3 +72,8 @@ body.modal-open {
   font-size: 2em;
   margin-top: -12px;
 }
+
+
+.navbar li {
+  font-size: 0.8em;
+}

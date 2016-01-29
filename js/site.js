@@ -12,5 +12,8 @@ $("document").ready(function() {
       lazyLoad: 'progressive',
       arrows: false,
     });
+    carousel.css({
+     minHeight: $( window ).width()/2.15 +"px",
+    });
   })
 });
