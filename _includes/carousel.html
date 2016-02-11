@@ -3,7 +3,7 @@
   {% for f in site.static_files %}
   {% if f.path contains slug %}
   <div>
-    <img data-lazy="{{ f.path }}" alt="{{ page.title }}">
+    <img min-width="1600px" data-lazy="{{ f.path }}" alt="{{ page.title }}">
   </div>
   {% endif %}
   {% endfor %}
