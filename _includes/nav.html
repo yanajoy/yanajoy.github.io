@@ -9,11 +9,11 @@
   </div>
   <div class="navbar-collapse collapse">
     <ul class="nav navbar-nav navbar-right" style="margin-right: 15px;">
-      {% for collection in site.collections %} {% if collection[1].size > 0 %}
+      {% for collection in site.collections %}{% if  collection.docs.size > 0 %}
       <li class="page-scroll">
-        <a href="#{{ collection[0] }}">{{ collection[1].title }}</a>
+        <a href="#{{ collection.label }}">{{ collection.title }}</a>
       </li>
-      {% endif %} {% endfor %}
+      {% endif %}{% endfor %}
       <li class="page-scroll">
         <a href="#about">About</a>
       </li>

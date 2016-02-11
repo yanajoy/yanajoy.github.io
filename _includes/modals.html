@@ -1,6 +1,6 @@
 <!-- Portfolio Modals -->
 
-{% for collection in site.collections %} {% for page in collection[1].docs %}
+{% for collection in site.collections %} {% for page in collection.docs %}
 <div class="portfolio-modal modal fade" id="portfolioModal-{{ page.title | slugify }}" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="vertical-alignment-helper">
     <div class="modal-dialog vertical-align-center">

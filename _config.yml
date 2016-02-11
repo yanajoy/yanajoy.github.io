@@ -58,9 +58,13 @@ permalink: none
 collections:
   country_houses:
     title : Country Houses
+    output: true
   landscape_design:
     title : Landscape design
+    output: true
   interiors:
     title : Interiors
+    output: true
   public_architecture:
     title : Public architecture
+    output: true
