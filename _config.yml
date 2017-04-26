@@ -68,3 +68,6 @@ collections:
   public_architecture:
     title : Public architecture
     output: true
+  asian_houses:
+    title : Asian houses
+    output: true
